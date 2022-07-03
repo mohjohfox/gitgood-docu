@@ -152,7 +152,8 @@
         <button class="collapsible">Wie wird die Software ausgeliefert?</button>
         <div class="content">
           <p>
-              Antwort
+             Die Software ist eine Webseite. Bei einem neuen Release wird die Webseite mit den Neuerungen veröffentlicht und steht sofort allen Nutzern zur Verfügung. Somit 
+             haben stets alle Nutzer die neuste Version der Webseite. 
           </p>
         </div>
         
@@ -161,7 +162,7 @@
         <button class="collapsible">Wo wird die Software betrieben?</button>
         <div class="content">
           <p>
-              Antwort
+              Auf einem linuxbasiertem Webserver. Die Anwendung selbst läuft auf einem Tomcatserver mit der Javaversion 11. 
           </p>
         </div>
         
@@ -170,14 +171,29 @@
         <button class="collapsible"> (6) Buildkonzept:</button>
         <div class="content">
           <p>
-            Wie wird der Build getriggert?<br>
-            Was wird gebaut( Setup / JAR/Exe / Container)?<br>
-            Wo wird gebaut?<br>
-            Wann/Wie oft werden welche Tests ausgeführt?<br>
-            Wer wird wann informiert Entwickler/Kunde/DevOps<br>
-            (2) Script für Semantic Versioning erstellen<br>
+            <u>Wie wird der Build getriggert?</u> <br>
+            Der Build wird bei jedem Push auf die jeweilige Feature-Branch bzw. nach einem Pull-Request auf der master-Branch getriggert.<br> 
+
+            <u>Was wird gebaut( Setup / JAR/Exe / Container)?</u> <br>
+            Da es sich um eine Webanwendung handelt, wird für das Backend eine WAR (Web Application Archive) erstellt. Diese kann in einem Tomcat-Container deployed werden. <br>
+
+            <u>Wo wird gebaut?</u> <br>
+            Über Github-Actions. Die WAR-File wird dann automatisch auf den Docker-Container deployed. <br>
+
+            <u>Wann/Wie oft werden welche Tests ausgeführt?</u> <br>
+            Bei jeder Änderung wird entweder die Feature-Pipeline oder die Master-Pipeline angestossen. Beide führen zuerst den Build-Step durch. 
+            Wenn dieser erfolgreich abgeschlossen ist, werden alle vorhanden Test im Test-Step durchlaufen. Wenn der Build fehlgeschlägt, stoppt die Pipeline. <br>
+
+            <u>Wer wird wann informiert Entwickler/Kunde/DevOps</u> <br>
+            Kunden werden momentan nicht informiert, da diese im Normalfall von den Änderungen nichts mitbekommen. Zukünftig sollen die Nutzer allerdings bei einem neuen Relaise 
+            der Seite über neue Features informiert werden.
+            Entwickler bekommen eine Benachrichtung, falls ihre angestossene Pipeline fehlschlägt, da sich diese manuell darum kümmern müssen. <br>
+
+            <u>(2) Script für Semantic Versioning erstellen</u> <br>
     
-            (2) Testautomatisierung in der Builpipeline<br>    
+            <u>(2) Testautomatisierung in der Builpipeline</u> <br>    
+            Tests werden automatisch bei jeder neuen gepushten Änderung mit erfolreichem Build durchlaufen. Dadurch wird sichergestellt, dass die Änderungen immer noch alle 
+            Tests erfüllen.
           </p>
         </div>
         
@@ -188,7 +204,7 @@
         <button class="collapsible">Projektmanagement und Dokumentation wird zu unterschiedlichen Zeitpunkten im Projekt immer wieder relevant.</button>
         <div class="content">
           <p>
-              Antwort
+              Die Dokumentation und der Programmentwurf werden im Laufe des Projekts immer weiter fortgeführt und auf den momentanten Stand angepasst.
           </p>
         </div>
         
@@ -199,8 +215,20 @@
         <button class="collapsible"> Welche Rollen gibt es im Team / Wer macht was?</button>
         <div class="content">
           <p>
-              Antwort
-          </p>
+              <u>Alisa:</u>
+              <ul>
+                <li>Design</li>
+                <li>Frontend</li>
+                <li>Dokumentation</li>
+              </ul> <br>
+
+              <u>Marco:</u>
+              <ul>
+                <li>Backend</li>
+                <li>CI-CD</li>
+                <li>Dokumentation</li>
+              </ul> <br>
+            </p>
         </div>
         
         <br>
@@ -208,7 +236,9 @@
         <button class="collapsible">Wie/Wann wird vorgegangen? (MVP)</button>
         <div class="content">
           <p>
-              Antwort
+             MVP: Startseite und Spielseite nutzbar gestalten und die beiden Spielmodi 301 und 501 implementieren. Dies wurde bis zum 13.06.2022 erfolgreich abgeschlossen. 
+             Im weiteren Verlauf sollen die verbleibenden Spiemodi implementiert werden. Des Weiteren werden Bugs und Verbesserungen behandelt. Diese können als Issue über Github
+             eingereicht werden.
           </p>
         </div>
         
@@ -217,7 +247,9 @@
         <button class="collapsible">Wann sollte welches Feature entwickelt werden?</button>
         <div class="content">
           <p>
-              Antwort
+              Die Grundlagen für die Seite bilden die Start und die Spielseite. Diese sind bereits implementiert und nutzbar. Momentan sind die Spielmodi 301 und 501 spielbar. 
+              Als nächstes sollen die weiteren Spielmodi stück für stück implementiert werden. Neben diesen, werden Bugs und Verbesserungen umgesetzt, welche auffallen beziehungsweise
+              als GitHub-Issue gemeldet werden.
           </p>
         </div>
         
@@ -235,7 +267,9 @@
         <button class="collapsible">Wer arbeitet im UI/Backend?</button>
         <div class="content">
           <p>
-              Antwort
+            Die Hauptaufgaben lagen bei Alisa im Bereich Frontend und bei Marco im Bereich Backend. Allerdings haben sich die Bereiche teilweise überschnitten.
+            Falls sich jemand in einem Bereich nicht so gut auskannte, half man sich gegenseitig. Somit baute jeder Kenntnisse in beiden Bereichen aus. Des Weiteren
+            wurden sich immer Code-Reviews der anderen angeschaut.
           </p>
         </div>
         

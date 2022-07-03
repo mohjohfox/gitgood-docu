@@ -15,7 +15,7 @@
         <h4>1. Anforderungsanalyse</h4>
         <button class="collapsible">Was oder welche Probleme soll das Projekt/Programm lösen?</button>
         <div class="content">
-          <p></p>
+          <p>Test</p>
         </div>
 
         <br>
@@ -37,20 +37,24 @@
         <button class="collapsible">Wie groß ist der Umfang?</button>
         <div class="content">
           <p>
-            (4) Anforderungserfassung in natürlicher Sprache => z.B. Satzschablonen oder User Stories<br>
+            <u>Anforderungserfassung in natürlicher Sprache => z.B. Satzschablonen oder User Stories</u> <br>
+            <p>
+              Anforderungen wurden als sogennante User-Stories festgehalten. Diese beinhalten jeweils eine Beschreibung, was damit erreicht werden soll, eine Punktzahl (Story-Points)
+              und Unteraufgaben, die von den Entwicklern abgearbeitet werden. 
+            </p>
 
-            (2) Ziele und Zielgrupen festhalten => z.B. Produkt Vision Board / Personas formulieren<br>
+            <u>Ziele und Zielgrupen festhalten => z.B. Produkt Vision Board / Personas formulieren</u> <br>
     
-            (2) Anforderungen gliedern => Epics / User Story Map<br>
+            <u>Anforderungen gliedern => Epics / User Story Map</u> <br>
     
-            (10) Pitch / Kickoff Präsentation/Disskussion<br>
+            <u>Pitch / Kickoff Präsentation/Disskussion</u> <br>
     
-            (2) grobes zeitliches Schätzen der Anforderungen => in Personentagen oder in UserStoryPoints / FunctionPoints<br>
+            <u>Grobes zeitliches Schätzen der Anforderungen => in Personentagen oder in UserStoryPoints / FunctionPoints</u> <br>
     
-            Bonus:<br>
+            <u>Bonus:</u> <br>
     
-            (4) Eventstorming Board Phase 1 und 2 (Ermitteln der Domänenevents)<br>
-            (2) Glosar für Fachbegriffe<br>
+            <u>Eventstorming Board Phase 1 und 2 (Ermitteln der Domänenevents)</u> <br>
+            <u>Glosar für Fachbegriffe</u> <br>
           </p>
         </div>
 
@@ -60,21 +64,45 @@
         
         <button class="collapsible">Welche Komponenten/Tools/Frameworks/Sprachen kommen warum/wo zum Einsatz?</button>
         <div class="content">
-          <p>Antwort</p>
+          <p>Es wurden sich für folgende Technologien entschieden: 
+            <ul>
+              <li>Frontend-Sprache: Typescript</li>
+              <li>Frontend-Framework: Angular</li>
+              <li>Backend-Sprache: Java</li>
+              <li>Backend-Framework: SpringBoot</li>
+              <li>Datenbank: MariaDB</li>
+              <li>Remote Repositories via GitHub: 
+                <ul>
+                  <li><a target="_blank" href="https://github.com/mohjohfox/GitGood-frontend">Frontend</a></li>
+                  <li><a target="_blank" href="https://github.com/mohjohfox/GitGood-backend">Backend</a></li>
+                  <li><a target="_blank" href="https://github.com/mohjohfox/gitgood-docu">Dokumentation</a></li>
+                  <li><a target="_blank" href="https://github.com/mohjohfox/GitGoodPraesentation">Präsentation</a></li>
+                </ul>
+              </li>
+              <li>Orga / Sprints: <a target="_blank" href="https://gitgood.atlassian.net/jira/software/c/projects/GG/boards/2">Jira</a></li>
+            </ul>
+          </p>
         </div>
 
         <br>
 
         <button class="collapsible"> Wie wird das System von einzelnen Akteuren genutzt?</button>
         <div class="content">
-          <p>Antwort</p>
+          <p>Die Nutzer können die Webseite aufrufen und besuchen. Jeder kann ein neues Spiel öffnen. Es benötigt keinerlei Vorkonfiguration. Alles was eingestellt werden kann
+            ist auf der Seite beschrieben. 
+          </p>
         </div>
         
         <br>
 
         <button class="collapsible">Wie sehen die konkreten Workflows aus?</button>
         <div class="content">
-          <p>Antwort</p>
+          <p>Sprints sind immer eine Woche. Am Ende eines Sprints werden die Aufgaben für den nächsten Sprint besprochen. Für eine Story oder Bug wird eine
+            neue Branch aufgemacht. Wenn die Story abgeschlossen ist, wird ein Merge-Request gestellt. Wenn dieser approved wurde, wird die Branch in master gemerged und die Änderungen
+            auf den Server deployed. Storys und größere Bugs sind in Jira hinterlegt. Kleinere Bugs und Verbesserungen sind in GitHub Issues hinterlegt. Dort kann jeder einen Bug
+            oder eine Verbesserungen melden. Des Weiteren kann jeder der möchte, sich dort eine Issue suchen und bearbeiten. Wenn die Issue behoben ist, kann derjenige / diejenige einen
+            Merge-Request stellen. Sobald dieser genehmigt wurde, gehen die Änderungen auf master und somit live. 
+          </p>
         </div>
         
         <br>
@@ -82,21 +110,21 @@
         <button class="collapsible">Wie ist das System aufgebaut? Architektur/Schnittstellen.</button>
         <div class="content">
           <p>
-            Festhalten der Technologieentscheidungen => Pro Contra Vergleich zu mindestens einer anderen Sprache/Framework/Tool (Lernkurve/Erfahrung ist auch ein Faktor)<br>
+            <u>Festhalten der Technologieentscheidungen => Pro Contra Vergleich zu mindestens einer anderen Sprache/Framework/Tool (Lernkurve/Erfahrung ist auch ein Faktor)</u> <br>
 
-            Use-Case Diagramme für grobes Verhalten des Systems<br>
+            <u>Use-Case Diagramme</u> <br>
     
-            Aktivitätsdiagramm pro Teamperson eins oder ein ausführliches Zustandsdiagramm, falls besser für Projekt geeignet<br>
+            <u>Aktivitätsdiagramm:</u> <br>
     
-            Klassendiagramm: nur Entity Klassen<br>
+            <u>Klassendiagramm:</u> <br>
     
-            Schnittstellen Web/Persistenz/Ui visualisieren => Komponentendiagramm<br>
+            <u>Schnittstellen Web/Persistenz/Ui visualisieren => Komponentendiagramm:</u> <br>
     
-            Sequenzdiagram<br>
+            <u>Sequenzdiagram:</u> <br>
     
-            Bonus:<br>
+            <u>Bonus:</u> <br>
     
-            Mockups/Wireframes der UI<br>
+            <u>Mockups/Wireframes der UI:</u> <br>
           </p>
         </div>
         
@@ -107,20 +135,22 @@
         <button class="collapsible">Wurden Clean-Code Prinzipien eingehalten?</button>
         <div class="content">
           <p>
-            Code-Reviews wurden über GitHub durchgeführt.
-            (4) Code-Review => Naming Variablen / Funktionen / Klassen<br>
+            Code-Reviews wurden über GitHub durchgeführt.<br>
+            Code-Review => Naming Variablen / Funktionen / Klassen<br>
 
-            (8) Code-Review => SOLID Prinzipien<br>
+            Code-Review => SOLID Prinzipien<br>
     
-            (2) Code-Review => DRY<br>
+            Code-Review => DRY<br>
     
-            (6) Code-Review => Error-Handling<br>
+            Code-Review => Error-Handling<br>
     
-            Bonus:<br>
+            <u>Bonus:</u> <br>
 
-            Code-Review => Code-Kommentare und einheitliche Formatierung<br>
-            Einheitliche Formatierung wurde über einen Formatter in der Entwicklungsumgebgung erzielt.
-            Es soll nur das Nötigste Kommentiert werden: Die besten Kommentare, sind die, die man nicht braucht :) <br>
+            <u>Code-Review => Code-Kommentare und einheitliche Formatierung:</u> <br>
+            <p>
+              Einheitliche Formatierung wurde über einen Formatter in der Entwicklungsumgebgung erzielt.
+              Es soll nur das Nötigste Kommentiert werden: Die besten Kommentare, sind die, die man nicht braucht :) 
+            </p>
           </p>
         </div>
         
@@ -131,11 +161,12 @@
         <button class="collapsible">Wie wird sichergestellt, dass sich das entwickelte System wie spezifiziert verhält?</button>
         <div class="content">
           <p>
-            (2) Manuelles Testkonzept => kurze Schrittanleitung für manuelle Tests<br>
+            <u>Manuelles Testkonzept => kurze Schrittanleitung für manuelle Tests</u> <br>
 
-            (4) Unit Tests => Pro Person mindestens eine Klasse / Funktionalität testen<br>
+            <u>Unit Tests => Pro Person mindestens eine Klasse / Funktionalität testen</u> <br>
+            Es wurden Unit und Integrationstest geschrieben (click here)
     
-            (4) Integrationstest oder Ende-zu-Ende Test gegen eine Persistenz oder eine API<br>
+            <u>Integrationstest oder Ende-zu-Ende Test gegen eine Persistenz oder eine API</u> <br>
           </p>
         </div>
         
@@ -172,32 +203,44 @@
         
         <br>
 
-        <button class="collapsible"> (6) Buildkonzept:</button>
+        <button class="collapsible">Buildkonzept:</button>
         <div class="content">
           <p>
-            <u>Wie wird der Build getriggert?</u> <br>
-            Der Build wird bei jedem Push auf die jeweilige Feature-Branch bzw. nach einem Pull-Request auf der master-Branch getriggert.<br> 
+            <u>Wie wird der Build getriggert?</u> 
+            <p>
+              Der Build wird bei jedem Push auf die jeweilige Feature-Branch bzw. nach einem Pull-Request auf der master-Branch getriggert.
+            </p>
+            
+            <u>Was wird gebaut( Setup / JAR/Exe / Container)?</u>
+            <p>
+            Da es sich um eine Webanwendung handelt, wird für das Backend eine WAR (Web Application Archive) erstellt. Diese kann in einem Tomcat-Container deployed werden.
+            </p>
 
-            <u>Was wird gebaut( Setup / JAR/Exe / Container)?</u> <br>
-            Da es sich um eine Webanwendung handelt, wird für das Backend eine WAR (Web Application Archive) erstellt. Diese kann in einem Tomcat-Container deployed werden. <br>
+            <u>Wo wird gebaut?</u>
+            <p>
+            Über Github-Actions. Die WAR-File wird dann automatisch auf den Docker-Container deployed.
+            </p>
 
-            <u>Wo wird gebaut?</u> <br>
-            Über Github-Actions. Die WAR-File wird dann automatisch auf den Docker-Container deployed. <br>
+            <u>Wann/Wie oft werden welche Tests ausgeführt?</u> 
+            <p>
+              Bei jeder Änderung wird entweder die Feature-Pipeline oder die Master-Pipeline angestossen. Beide führen zuerst den Build-Step durch. 
+              Wenn dieser erfolgreich abgeschlossen ist, werden alle vorhanden Test im Test-Step durchlaufen. Wenn der Build fehlgeschlägt, stoppt die Pipeline. 
+            </p>
 
-            <u>Wann/Wie oft werden welche Tests ausgeführt?</u> <br>
-            Bei jeder Änderung wird entweder die Feature-Pipeline oder die Master-Pipeline angestossen. Beide führen zuerst den Build-Step durch. 
-            Wenn dieser erfolgreich abgeschlossen ist, werden alle vorhanden Test im Test-Step durchlaufen. Wenn der Build fehlgeschlägt, stoppt die Pipeline. <br>
+            <u>Wer wird wann informiert Entwickler/Kunde/DevOps</u> 
+            <p>
+              Kunden werden momentan nicht informiert, da diese im Normalfall von den Änderungen nichts mitbekommen. Zukünftig sollen die Nutzer allerdings bei einem neuen Relaise 
+              der Seite über neue Features informiert werden.
+              Entwickler bekommen eine Benachrichtung, falls ihre angestossene Pipeline fehlschlägt, da sich diese manuell darum kümmern müssen. 
+            </p>
 
-            <u>Wer wird wann informiert Entwickler/Kunde/DevOps</u> <br>
-            Kunden werden momentan nicht informiert, da diese im Normalfall von den Änderungen nichts mitbekommen. Zukünftig sollen die Nutzer allerdings bei einem neuen Relaise 
-            der Seite über neue Features informiert werden.
-            Entwickler bekommen eine Benachrichtung, falls ihre angestossene Pipeline fehlschlägt, da sich diese manuell darum kümmern müssen. <br>
-
-            <u>(2) Script für Semantic Versioning erstellen</u> <br>
+            <u>Script für Semantic Versioning erstellen</u> <br>
     
-            <u>(2) Testautomatisierung in der Builpipeline</u> <br>    
-            Tests werden automatisch bei jeder neuen gepushten Änderung mit erfolreichem Build durchlaufen. Dadurch wird sichergestellt, dass die Änderungen immer noch alle 
-            Tests erfüllen.
+            <u>Testautomatisierung in der Builpipeline</u> 
+            <p>
+              Tests werden automatisch bei jeder neuen gepushten Änderung mit erfolreichem Build durchlaufen. Dadurch wird sichergestellt, dass die Änderungen immer noch alle 
+              Tests erfüllen.
+            </p>  
           </p>
         </div>
         
@@ -263,28 +306,35 @@
         <div class="content">
           <p>
               <u>Wer arbeitet im UI/Backend?</u> 
-              Die Hauptaufgaben lagen bei Alisa im Bereich Frontend und bei Marco im Bereich Backend. Allerdings haben sich die Bereiche teilweise überschnitten.
-              Falls sich jemand in einem Bereich nicht so gut auskannte, half man sich gegenseitig. Somit baute jeder Kenntnisse in beiden Bereichen aus. Des Weiteren
-              wurden sich immer Code-Reviews der anderen angeschaut. <br>
+              <p>
+                Die Hauptaufgaben lagen bei Alisa im Bereich Frontend und bei Marco im Bereich Backend. Allerdings haben sich die Bereiche teilweise überschnitten.
+                Falls sich jemand in einem Bereich nicht so gut auskannte, half man sich gegenseitig. Somit baute jeder Kenntnisse in beiden Bereichen aus. Des Weiteren
+                wurden sich immer Code-Reviews der anderen angeschaut. 
+              </p>
+
 
               <u>Wer kümmert sich um was?</u>
               Vorgehen festlegen, z.B.:<br>
 
-              <u>Agiles vorgehen: welche Sprint Zyklen</u> <br>
-              Wir haben uns auf einen Sprint-Zyklus von einer Woche geeinigt. Im Laufe der Zeit wurden die Ideen und Feauters im Backlog gesammelt. Am Ende eines Sprints 
-              wird besprochen, welche Aufgaben in den neuen Sprint kommen. Dadurch ist eine flexible Arbeitsweise und eine schnelle Anpassung auf den aktuellen Stand möglich. 
-              Bevor eine Aufgabe in den Sprint kommt, wurde diese von uns beiden geschätz. Dadurch konnte abgewät werden, welche und wieviele Aufgaben wir in den Sprint mit aufnehmen können. 
+              <u>Agiles vorgehen: welche Sprint Zyklen</u> 
+              <p>
+                Wir haben uns auf einen Sprint-Zyklus von einer Woche geeinigt. Im Laufe der Zeit wurden die Ideen und Feauters im Backlog gesammelt. Am Ende eines Sprints 
+                wird besprochen, welche Aufgaben in den neuen Sprint kommen. Dadurch ist eine flexible Arbeitsweise und eine schnelle Anpassung auf den aktuellen Stand möglich. 
+                Bevor eine Aufgabe in den Sprint kommt, wurde diese von uns beiden geschätz. Dadurch konnte abgewät werden, welche und wieviele Aufgaben wir in den Sprint mit aufnehmen können. 
+  
+                Erneutes Schätzen nach Systementwurf und vor Implementierung
+              </p>
 
-              Erneutes Schätzen nach Systementwurf und vor Implementierung<br>
-      
               <u>MVP festlegen und einzelne Aufgaben : Welches Feature ist am wichtigsten und wird als erstes umgesetzt, was wäre nice to have</u> <br>
       
               <u>Bonus:</u> <br>
       
-              <u>Kanban/Scrum Board aufsetzen:</u> <br> 
-              Für das Projekt wird ein Scrum-Board in Jira verwendet. In diesem werden die Storys und technischen Aufgaben gesammelt und geschätz.Für Bugs und Verbesserungsvorschläge
-              von Nutzern können über GitHub-Issues eingegreicht werden. Je nach dem, welchem Umfang eine Issue hat wird diese als Story in das Jira-Board mit aufgenommen oder
-              als Bug direkt als GitHub-Issue behandelt. Dadurch ist es für den Nutzer, der die Issue einreicht, transparent gehalten. <br>
+              <u>Kanban/Scrum Board aufsetzen:</u> 
+              <p>
+                Für das Projekt wird ein Scrum-Board in Jira verwendet. In diesem werden die Storys und technischen Aufgaben gesammelt und geschätz.Für Bugs und Verbesserungsvorschläge
+                von Nutzern können über GitHub-Issues eingegreicht werden. Je nach dem, welchem Umfang eine Issue hat wird diese als Story in das Jira-Board mit aufgenommen oder
+                als Bug direkt als GitHub-Issue behandelt. Dadurch ist es für den Nutzer, der die Issue einreicht, transparent gehalten.
+              </p>
           </p>
         </div>
         
@@ -295,16 +345,7 @@
         <button class="collapsible">Wie kann die Zielgruppe das Projekt/Programm nutzen?</button>
         <div class="content">
           <p>
-              Antwort
-          </p>
-        </div>
-
-        <br>
-
-        <button class="collapsible">Wie kann die Zielgruppe das Projekt/Programm nutzen?</button>
-        <div class="content">
-          <p>
-              Antwort
+              Durch Aufruf der Seite. Es benötigt keinerlei Vorkonfiguration. Die Webseite kann über einen Webbrowser am Computer oder über ein mobiles Endgerät aufgerufen werden. 
           </p>
         </div>
 
@@ -313,11 +354,21 @@
         <button class="collapsible"> Wie kann ein Entwickler das System bauen/testen/weiterentwickeln?</button>
         <div class="content">
           <p>
-            (4) Handbuch bzw. How to Anleitung oder kurzes Screen-Video<br>
+            <u>Handbuch bzw. How to Anleitung oder kurzes Screen-Video</u> 
+            
+            <br>
 
-            (3) generierte Doku z.B. SwaggerUi, JDoc, JSDoc, XML-Doc<br>
-    
-            (3) Readme.md für Entwickler:<br>
+            <u>Generierte Doku</u> 
+            
+            <br>
+
+              Die Dokumentationen sind im Folgenden verlinkt:
+              <ul>
+                <a href="frontend/index.html">Frontend</a> <br>
+                <a href="backend/index.html">Backend</a>
+              </ul>
+
+            <u>Readme.md für Entwickler</u> <br>
           </p>
         </div>
 
@@ -326,7 +377,7 @@
         <button class="collapsible">Wie kann gebaut/getestet werden?</button>
         <div class="content">
           <p>
-              Antwort
+              Manuell kann die Seite 
           </p>
         </div>
 

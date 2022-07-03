@@ -15,7 +15,7 @@
         <h4>1. Anforderungsanalyse</h4>
         <button class="collapsible">Was oder welche Probleme soll das Projekt/Programm lösen?</button>
         <div class="content">
-          <p>Antwort</p>
+          <p></p>
         </div>
 
         <br>
@@ -82,21 +82,21 @@
         <button class="collapsible">Wie ist das System aufgebaut? Architektur/Schnittstellen.</button>
         <div class="content">
           <p>
-            (2) Festhalten der Technologieentscheidungen => Pro Contra Vergleich zu mindestens einer anderen Sprache/Framework/Tool (Lernkurve/Erfahrung ist auch ein Faktor)<br>
+            Festhalten der Technologieentscheidungen => Pro Contra Vergleich zu mindestens einer anderen Sprache/Framework/Tool (Lernkurve/Erfahrung ist auch ein Faktor)<br>
 
-            (4) Use-Case Diagramme für grobes Verhalten des Systems<br>
+            Use-Case Diagramme für grobes Verhalten des Systems<br>
     
-            (6) Aktivitätsdiagramm pro Teamperson eins oder ein ausführliches Zustandsdiagramm, falls besser für Projekt geeignet<br>
+            Aktivitätsdiagramm pro Teamperson eins oder ein ausführliches Zustandsdiagramm, falls besser für Projekt geeignet<br>
     
-            (3) Klassendiagramm: nur Entity Klassen<br>
+            Klassendiagramm: nur Entity Klassen<br>
     
-            (2) Schnittstellen Web/Persistenz/Ui visualisieren => Komponentendiagramm<br>
+            Schnittstellen Web/Persistenz/Ui visualisieren => Komponentendiagramm<br>
     
-            (3) Sequenzdiagram<br>
+            Sequenzdiagram<br>
     
             Bonus:<br>
     
-            (4) Mockups/Wireframes der UI<br>
+            Mockups/Wireframes der UI<br>
           </p>
         </div>
         
@@ -107,6 +107,7 @@
         <button class="collapsible">Wurden Clean-Code Prinzipien eingehalten?</button>
         <div class="content">
           <p>
+            Code-Reviews wurden über GitHub durchgeführt.
             (4) Code-Review => Naming Variablen / Funktionen / Klassen<br>
 
             (8) Code-Review => SOLID Prinzipien<br>
@@ -116,8 +117,10 @@
             (6) Code-Review => Error-Handling<br>
     
             Bonus:<br>
-    
-            (2) Code-Review => Code-Kommentare und einheitliche Formatierung<br>
+
+            Code-Review => Code-Kommentare und einheitliche Formatierung<br>
+            Einheitliche Formatierung wurde über einen Formatter in der Entwicklungsumgebgung erzielt.
+            Es soll nur das Nötigste Kommentiert werden: Die besten Kommentare, sind die, die man nicht braucht :) <br>
           </p>
         </div>
         
@@ -143,7 +146,8 @@
         <button class="collapsible">Wie wird eine eindeutige Version verwaltet und für den Kunden erzeugt?</button>
         <div class="content">
           <p>
-              Antwort
+              Da die Software ein Webanwendung ist, wird direkt die neue Webseite deployed und steht den Kunden / Nutzern sofort zur Verfügung. 
+              Dadurch hat jeder Nutzer die akutelle Version mit den neusten Features. Ein manuelles Updaten der Anwendung ist somit nicht nötig.
           </p>
         </div>
         
@@ -255,44 +259,37 @@
         
         <br>
        
-        <button class="collapsible"> (3) Teamaufgaben festlegen, z.B.:</button>
+        <button class="collapsible">Teamaufgaben festlegen, z.B.:</button>
         <div class="content">
           <p>
-              Antwort
+              <u>Wer arbeitet im UI/Backend?</u> 
+              Die Hauptaufgaben lagen bei Alisa im Bereich Frontend und bei Marco im Bereich Backend. Allerdings haben sich die Bereiche teilweise überschnitten.
+              Falls sich jemand in einem Bereich nicht so gut auskannte, half man sich gegenseitig. Somit baute jeder Kenntnisse in beiden Bereichen aus. Des Weiteren
+              wurden sich immer Code-Reviews der anderen angeschaut. <br>
+
+              <u>Wer kümmert sich um was?</u>
+              Vorgehen festlegen, z.B.:<br>
+
+              <u>Agiles vorgehen: welche Sprint Zyklen</u> <br>
+              Wir haben uns auf einen Sprint-Zyklus von einer Woche geeinigt. Im Laufe der Zeit wurden die Ideen und Feauters im Backlog gesammelt. Am Ende eines Sprints 
+              wird besprochen, welche Aufgaben in den neuen Sprint kommen. Dadurch ist eine flexible Arbeitsweise und eine schnelle Anpassung auf den aktuellen Stand möglich. 
+              Bevor eine Aufgabe in den Sprint kommt, wurde diese von uns beiden geschätz. Dadurch konnte abgewät werden, welche und wieviele Aufgaben wir in den Sprint mit aufnehmen können. 
+
+              Erneutes Schätzen nach Systementwurf und vor Implementierung<br>
+      
+              <u>MVP festlegen und einzelne Aufgaben : Welches Feature ist am wichtigsten und wird als erstes umgesetzt, was wäre nice to have</u> <br>
+      
+              <u>Bonus:</u> <br>
+      
+              <u>Kanban/Scrum Board aufsetzen:</u> <br> 
+              Für das Projekt wird ein Scrum-Board in Jira verwendet. In diesem werden die Storys und technischen Aufgaben gesammelt und geschätz.Für Bugs und Verbesserungsvorschläge
+              von Nutzern können über GitHub-Issues eingegreicht werden. Je nach dem, welchem Umfang eine Issue hat wird diese als Story in das Jira-Board mit aufgenommen oder
+              als Bug direkt als GitHub-Issue behandelt. Dadurch ist es für den Nutzer, der die Issue einreicht, transparent gehalten. <br>
           </p>
         </div>
         
         <br>
     
-        <button class="collapsible">Wer arbeitet im UI/Backend?</button>
-        <div class="content">
-          <p>
-            Die Hauptaufgaben lagen bei Alisa im Bereich Frontend und bei Marco im Bereich Backend. Allerdings haben sich die Bereiche teilweise überschnitten.
-            Falls sich jemand in einem Bereich nicht so gut auskannte, half man sich gegenseitig. Somit baute jeder Kenntnisse in beiden Bereichen aus. Des Weiteren
-            wurden sich immer Code-Reviews der anderen angeschaut.
-          </p>
-        </div>
-        
-        <br>
-
-        <button class="collapsible">Wer kümmert sich um was?</button>
-        <div class="content">
-          <p>
-            (2) Vorgehen festlegen, z.B.:<br>
-
-            Agiles vorgehen: welche Sprint Zyklen<br>
-            (3) Erneutes Schätzen nach Systementwurf und vor Implementierung<br>
-    
-            (2) MVP festlegen und einzelne Aufgaben : Welches Feature ist am wichtigsten und wird als erstes umgesetzt, was wäre nice to have<br>
-    
-            Bonus:<br>
-    
-            (4) Kanban/Scrum Board aufsetzen<br>
-          </p>
-        </div>
-        
-        <br>
-
         <h5>6.2 Dokumentation</h5><br>
 
         <button class="collapsible">Wie kann die Zielgruppe das Projekt/Programm nutzen?</button>

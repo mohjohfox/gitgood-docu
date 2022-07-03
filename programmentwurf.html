@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gitgood-client documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h3>Programmentwurf</h3>
+        <h4>1. Anforderungsanalyse</h4>
+        <button class="collapsible">Was oder welche Probleme soll das Projekt/Programm lösen?</button>
+        <div class="content">
+          <p>Antwort</p>
+        </div>
+
+        <br>
+
+        <button class="collapsible">Wie sind die Rahmenbedingungen? (Systemgrenzen)</button>
+        <div class="content">
+          <p>Antwort</p>
+        </div>
+
+        <br>
+
+        <button class="collapsible"> Wozu wird es benötigt? Ziele/Zielgruppen?</button>
+        <div class="content">
+          <p>Antwort</p>
+        </div>
+
+        <br>
+
+        <button class="collapsible">Wie groß ist der Umfang?</button>
+        <div class="content">
+          <p>
+            (4) Anforderungserfassung in natürlicher Sprache => z.B. Satzschablonen oder User Stories<br>
+
+            (2) Ziele und Zielgrupen festhalten => z.B. Produkt Vision Board / Personas formulieren<br>
+    
+            (2) Anforderungen gliedern => Epics / User Story Map<br>
+    
+            (10) Pitch / Kickoff Präsentation/Disskussion<br>
+    
+            (2) grobes zeitliches Schätzen der Anforderungen => in Personentagen oder in UserStoryPoints / FunctionPoints<br>
+    
+            Bonus:<br>
+    
+            (4) Eventstorming Board Phase 1 und 2 (Ermitteln der Domänenevents)<br>
+            (2) Glosar für Fachbegriffe<br>
+          </p>
+        </div>
+
+        <br>
+
+        <h4>2. Systementwurf</h4><br>
+        
+        <button class="collapsible">Welche Komponenten/Tools/Frameworks/Sprachen kommen warum/wo zum Einsatz?</button>
+        <div class="content">
+          <p>Antwort</p>
+        </div>
+
+        <br>
+
+        <button class="collapsible"> Wie wird das System von einzelnen Akteuren genutzt?</button>
+        <div class="content">
+          <p>Antwort</p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible">Wie sehen die konkreten Workflows aus?</button>
+        <div class="content">
+          <p>Antwort</p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible">Wie ist das System aufgebaut? Architektur/Schnittstellen.</button>
+        <div class="content">
+          <p>
+            (2) Festhalten der Technologieentscheidungen => Pro Contra Vergleich zu mindestens einer anderen Sprache/Framework/Tool (Lernkurve/Erfahrung ist auch ein Faktor)<br>
+
+            (4) Use-Case Diagramme für grobes Verhalten des Systems<br>
+    
+            (6) Aktivitätsdiagramm pro Teamperson eins oder ein ausführliches Zustandsdiagramm, falls besser für Projekt geeignet<br>
+    
+            (3) Klassendiagramm: nur Entity Klassen<br>
+    
+            (2) Schnittstellen Web/Persistenz/Ui visualisieren => Komponentendiagramm<br>
+    
+            (3) Sequenzdiagram<br>
+    
+            Bonus:<br>
+    
+            (4) Mockups/Wireframes der UI<br>
+          </p>
+        </div>
+        
+        <br>
+
+        <h4>3. Implementierung</h4><br>
+
+        <button class="collapsible">Wurden Clean-Code Prinzipien eingehalten?</button>
+        <div class="content">
+          <p>
+            (4) Code-Review => Naming Variablen / Funktionen / Klassen<br>
+
+            (8) Code-Review => SOLID Prinzipien<br>
+    
+            (2) Code-Review => DRY<br>
+    
+            (6) Code-Review => Error-Handling<br>
+    
+            Bonus:<br>
+    
+            (2) Code-Review => Code-Kommentare und einheitliche Formatierung<br>
+          </p>
+        </div>
+        
+        <br>
+        
+        <h4>4. Test</h4><br>
+
+        <button class="collapsible">Wie wird sichergestellt, dass sich das entwickelte System wie spezifiziert verhält?</button>
+        <div class="content">
+          <p>
+            (2) Manuelles Testkonzept => kurze Schrittanleitung für manuelle Tests<br>
+
+            (4) Unit Tests => Pro Person mindestens eine Klasse / Funktionalität testen<br>
+    
+            (4) Integrationstest oder Ende-zu-Ende Test gegen eine Persistenz oder eine API<br>
+          </p>
+        </div>
+        
+        <br>
+
+        <h4>5. Build / Deploy / Maintanance</h4><br>
+
+        <button class="collapsible">Wie wird eine eindeutige Version verwaltet und für den Kunden erzeugt?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible">Wie wird die Software ausgeliefert?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible">Wo wird die Software betrieben?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible"> (6) Buildkonzept:</button>
+        <div class="content">
+          <p>
+            Wie wird der Build getriggert?<br>
+            Was wird gebaut( Setup / JAR/Exe / Container)?<br>
+            Wo wird gebaut?<br>
+            Wann/Wie oft werden welche Tests ausgeführt?<br>
+            Wer wird wann informiert Entwickler/Kunde/DevOps<br>
+            (2) Script für Semantic Versioning erstellen<br>
+    
+            (2) Testautomatisierung in der Builpipeline<br>    
+          </p>
+        </div>
+        
+        <br>
+
+        <h4>6. Querschnittsthemen</h4><br>
+
+        <button class="collapsible">Projektmanagement und Dokumentation wird zu unterschiedlichen Zeitpunkten im Projekt immer wieder relevant.</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+        
+        <h5>6.1 Projektmanagement</h5><br>
+
+        <button class="collapsible"> Welche Rollen gibt es im Team / Wer macht was?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible">Wie/Wann wird vorgegangen? (MVP)</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible">Wann sollte welches Feature entwickelt werden?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+       
+        <button class="collapsible"> (3) Teamaufgaben festlegen, z.B.:</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+    
+        <button class="collapsible">Wer arbeitet im UI/Backend?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+        
+        <br>
+
+        <button class="collapsible">Wer kümmert sich um was?</button>
+        <div class="content">
+          <p>
+            (2) Vorgehen festlegen, z.B.:<br>
+
+            Agiles vorgehen: welche Sprint Zyklen<br>
+            (3) Erneutes Schätzen nach Systementwurf und vor Implementierung<br>
+    
+            (2) MVP festlegen und einzelne Aufgaben : Welches Feature ist am wichtigsten und wird als erstes umgesetzt, was wäre nice to have<br>
+    
+            Bonus:<br>
+    
+            (4) Kanban/Scrum Board aufsetzen<br>
+          </p>
+        </div>
+        
+        <br>
+
+        <h5>6.2 Dokumentation</h5><br>
+
+        <button class="collapsible">Wie kann die Zielgruppe das Projekt/Programm nutzen?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+
+        <br>
+
+        <button class="collapsible">Wie kann die Zielgruppe das Projekt/Programm nutzen?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+
+        <br>
+
+        <button class="collapsible"> Wie kann ein Entwickler das System bauen/testen/weiterentwickeln?</button>
+        <div class="content">
+          <p>
+            (4) Handbuch bzw. How to Anleitung oder kurzes Screen-Video<br>
+
+            (3) generierte Doku z.B. SwaggerUi, JDoc, JSDoc, XML-Doc<br>
+    
+            (3) Readme.md für Entwickler:<br>
+          </p>
+        </div>
+
+        <br>
+
+        <button class="collapsible">Wie kann gebaut/getestet werden?</button>
+        <div class="content">
+          <p>
+              Antwort
+          </p>
+        </div>
+
+        <script src="expand.js"></script>
+    </body>
+</html>

@@ -150,13 +150,13 @@
     
             <u>Pitch / Kickoff Präsentation/Disskussion</u>
             <p>
-              Click here um auf die Kickoff Präsentation zu kommen.
+              <a href="" target="_blank">Click here</a> um auf die Kickoff Präsentation zu kommen.
             </p>
     
             <u>Grobes zeitliches Schätzen der Anforderungen => in Personentagen oder in UserStoryPoints / FunctionPoints</u>
             <p>
               Wir haben die Anforderung und zeitlichen Umfang mittels StoryPoints definiert. Hierzu wird jede Story von den Entwicklern geschätz. Als
-              Grundlage dienen die Fibonacci zahlen. Sollten die StoryPoints den Rahmen eines Sprints sprengen, wird die Story in kleiner Teilstories zerlegt. 
+              Grundlage dienen die Fibonaccizahlen. Sollten die StoryPoints den Rahmen eines Sprints sprengen, wird die Story in kleiner Teilstories zerlegt.
               Über ein sogenanntets Refinement haben wir die anstehenden Stories zusammen geschätzt und die Punkte in Jira eingetragen. Dadurch konnte geprüft werden, ob 
               jeder Entwickler die gleiche Vorstellung von der Aufgabe hat und die einzelnen Bedenken bezüglich der Story besprochen und geklärt werden. 
             </p>
@@ -207,10 +207,17 @@
 
         <button class="collapsible">Wie sehen die konkreten Workflows aus?</button>
         <div class="content">
-          <p>Sprints sind immer eine Woche. Am Ende eines Sprints werden die Aufgaben für den nächsten Sprint besprochen. Für eine Story oder Bug wird eine
+          <p>
+            Über die Projektphase wurde mit dem Tool Jira in sogenannten Sprints gearbeitet.
+            Sprints betrugen immer eine Woche. Am Ende eines Sprints werden die Aufgaben für den nächsten Sprint besprochen. <br>
+              Für eine Story oder Bug wird eine
             neue Branch aufgemacht. Wenn die Story abgeschlossen ist, wird ein Merge-Request gestellt. Wenn dieser approved wurde, wird die Branch in master gemerged und die Änderungen
-            auf den Server deployed. Storys und größere Bugs sind in Jira hinterlegt. Kleinere Bugs und Verbesserungen sind in GitHub Issues hinterlegt. Dort kann jeder einen Bug
-            oder eine Verbesserungen melden. Des Weiteren kann jeder der möchte, sich dort eine Issue suchen und bearbeiten. Wenn die Issue behoben ist, kann derjenige / diejenige einen
+            auf den Server deployed. Storys und Bugs wurden bisher in Jira hinterlegt.
+            Allerdings haben wir dies mittlerweile von Jira auf GitHub Issues umgestellt.
+              Dies ermöglicht ein effizienteres und Open Source mäßigeres arbeiten.
+              Dort kann absofort jeder ein neues Feature, einen Bug
+            oder eine Verbesserungen melden. Des Weiteren kann jeder der möchte, sich dort eine Issue suchen und bearbeiten.
+              Wenn die Issue behoben ist, kann derjenige / diejenige einen
             Merge-Request stellen. Sobald dieser genehmigt wurde, gehen die Änderungen auf master und somit live. 
           </p>
         </div>
@@ -220,8 +227,225 @@
         <button class="collapsible">Wie ist das System aufgebaut? Architektur/Schnittstellen.</button>
         <div class="content">
           <p>
-            <u>Festhalten der Technologieentscheidungen => Pro Contra Vergleich zu mindestens einer anderen Sprache/Framework/Tool (Lernkurve/Erfahrung ist auch ein Faktor)</u> <br>
-            <br>
+            <u>Festhalten der Technologieentscheidungen => Pro Contra Vergleich zu mindestens einer anderen Sprache/Framework/Tool (Lernkurve/Erfahrung ist auch ein Faktor)</u>
+            <p>
+                Es wurde sich für folgende Technologien entschieden:
+                <table border="1" style="text-align: center">
+                    <caption>Technologiestack</caption>
+                    <tr>
+                        <th>Was?</th>
+                        <th>Frontend</th>
+                        <th>Backend</th>
+                    </tr>
+                    <tr>
+                        <td>Sprache</td>
+                        <td>Typescript</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Framework</td>
+                        <td>Angular</td>
+                        <td>SpringBoot</td>
+                    </tr>
+                    <tr>
+                        <td>Datenbank</td>
+                        <td colspan="2">MariaDB</td>
+                    </tr>
+                    <tr>
+                        <td>Repository</td>
+                        <td colspan="2">GitHub</td>
+                    </tr>
+                </table>
+
+                Im Folgenden wird der Technologiestack mit anderen Möglichkeiten vergliechen. Dabei werden auch die Gründe für unsere Entscheidung dargelegt.
+
+                <table border="1" style="text-align: center">
+                    <caption>Sprachvergleich Frontend</caption>
+                    <tr>
+                        <th></th>
+                        <th>Typescript</th>
+                        <th>JavaScript</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Vorteile</td>
+                        <td>Typensicherheit</td>
+                        <td>Sehr dynamisch und leichtgewichtig</td>
+                    </tr>
+                    <tr>
+                        <td>Bessere Code Strukturierung möglich</td>
+                        <td>Flexible und relativ schnell zu erlernen</td>
+                    </tr>
+                    <tr>
+                        <td>Erlaubt OOP-Techniken</td>
+                        <td>Läuft etwas schneller, da es nicht kompiliert werden muss</td>
+                    </tr>
+                    <tr>
+                        <td>Geeignet für größere Projekte</td>
+                        <td>Geeignet für kleinere Projekte</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Nachteile</td>
+                        <td>Etwas langsamer, da es kompiliert werden muss</td>
+                        <td>Keine Typsicherheit</td>
+                    </tr>
+                    <tr>
+                        <td>Steile Lernkurve im Gegensatz zu JS</td>
+                        <td>Anfälliger für Fehler (Aufgrund keiner Typsicherheit)</td>
+                    </tr>
+                    <tr>
+                        <td>Community ist kleiner als bei JS</td>
+                        <td>Code neigt dazu, sich schnell aufzublähen</td>
+                    </tr>
+                </table>
+
+                <p>Aufgrund der Typsicherheit, der Größe des Projekts und die gute Integration
+                mit dem Framework haben wir uns für die Sprache Typescript entschieden.</p>
+
+                <table border="1" style="text-align: center">
+                    <caption>Frameworkvergleich Frontend</caption>
+                    <tr>
+                        <th></th>
+                        <th>Angular</th>
+                        <th>React</th>
+                        <th>VueJS</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Vorteile</td>
+                        <td>Große Community und viel Lernmaterial verfügbar</td>
+                        <td>Häufige Updates</td>
+                        <td>Klein und schnell</td>
+                    </tr>
+                    <tr>
+                        <td>Komponentenbasierte Architektur -> viel wiederverwenbar</td>
+                        <td>Virtueller DOM erlaubt sehr schnelle Operationen</td>
+                        <td>Einsteigerfreundlich</td>
+                    </tr>
+                    <tr>
+                        <td>Ermöglicht dependency injection</td>
+                        <td>Nutzung von wiederverwendbaren Komponenten</td>
+                        <td>Einfache Syntax</td>
+                    </tr>
+                    <tr>
+                        <td>Gute Server Performance</td>
+                        <td>Einsteigerfreundlich</td>
+                        <td>Detailierte Dokumentation</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Nachteile</td>
+                        <td>Schwierig für Einsteiger</td>
+                        <td>Dokumentation ist noch nicht ausgereift</td>
+                        <td>Wenige Plugins / Erweiterungen</td>
+                    </tr>
+                    <tr>
+                        <td>Viel Boilerplait Code am Anfang</td>
+                        <td>Erlernen der JSX syntax</td>
+                        <td>Relativ neu - kleine Community</td>
+                    </tr>
+                </table>
+
+                <p>
+                    Es wurde sich für das Angularframework entschieden, da es zum einen sehr gut mit
+                    Typescript kompatibel ist. Zum anderen bringt es viele nützliche Feautures wie
+                    Beispielsweise die dependency injection und die komponentenbasierte Arbeitesweise mit.
+                    Da das Framework aus dem Betrieb und aus der Vorlesung bereits bekannt sind, wiegt der
+                    Nachteil mit der größeren Einstiegshürde nicht so stark.
+                </p>
+
+                <table border="1" style="text-align: center">
+                    <caption>Sprachvergleich Backend</caption>
+                    <tr>
+                        <th></th>
+                        <th>Java</th>
+                        <th>C#</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">Vorteile</td>
+                        <td>Detailierte Dokumentation</td>
+                        <td>Einfache Nutzung von extension methods</td>
+                    </tr>
+                    <tr>
+                        <td>Sehr viele 3rd Party Libraries</td>
+                        <td>Einfache getting und set Methoden</td>
+                    </tr>
+                    <tr>
+                        <td>Gute Performance</td>
+                        <td>Wenig Boilerplait Code</td>
+                    </tr>
+                    <tr>
+                        <td>Große Community steht dahinter</td>
+                        <td>Großes .Net Framework steht dahinter</td>
+                    </tr>
+                    <tr>
+                        <td>Möglichkeit für Multithreading</td>
+                        <td>Beinhaltet mehr Sprachkonstrukte</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Nachteile</td>
+                        <td>Hohe Speicheranforderungen</td>
+                        <td>Wenig flexibel -> meist abhängig von dem .Net Framework</td>
+                    </tr>
+                    <tr>
+                        <td>Keinen Einfluss auf Speichermanagement möglich</td>
+                        <td>Einschränkungen, da es sehr Windows basiert ist</td>
+                    </tr>
+                </table>
+
+                <table border="1" style="text-align: center">
+                    <caption>Frameworkvergleich Backend</caption>
+                    <tr>
+                        <th></th>
+                        <th>SpringBoot</th>
+                        <th>.Net</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Vorteile</td>
+                        <td>Typensicherheit</td>
+                        <td>Vorteil Javascript</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>SpringBoot</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Nachteile</td>
+                        <td>nachteil typescript</td>
+                        <td>Keine Typsicherheit</td>
+                    </tr>
+                    <tr>
+                        <td>Repository</td>
+                        <td>GitHub</td>
+                    </tr>
+                </table>
+
+                <table border="1" style="text-align: center">
+                    <caption>Vergleich für Remote Repo Plattformen</caption>
+                    <tr>
+                        <th></th>
+                        <th>GitHub</th>
+                        <th>GitLab</th>
+                        <th>Codeborg</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Vorteile</td>
+                        <td>Typensicherheit</td>
+                        <td>Vorteil Javascript</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>SpringBoot</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Nachteile</td>
+                        <td>nachteil typescript</td>
+                        <td>Keine Typsicherheit</td>
+                    </tr>
+                    <tr>
+                        <td>Repository</td>
+                        <td>GitHub</td>
+                    </tr>
+                </table>
+            </p>
+
             <u>Use-Case Diagramm</u><br>
             <img src="" alt="Use-Case-Diagramm"> <br>
     

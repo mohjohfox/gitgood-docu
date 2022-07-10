@@ -390,6 +390,14 @@
                     </tr>
                 </table>
 
+                <p>
+                  Wir haben uns für die Programmiersprache Java entschieden, da der Einstieg durch die
+                  Vorlesung Programmieren relativ einfach war. Des Weiteren gibt es viele
+                  Bibliotheken, welche das Entwickeln einer Webanwendung einfach gestalten.
+                  Zudem gibt es durch Junit eine sehr gute Testbibliothek, welche das Schreiben
+                  von Tests einfach gestaltet.
+                </p>
+
                 <table border="1" style="text-align: center">
                     <caption>Frameworkvergleich Backend</caption>
                     <tr>
@@ -398,24 +406,33 @@
                         <th>.Net</th>
                     </tr>
                     <tr>
-                        <td rowspan="2">Vorteile</td>
-                        <td>Typensicherheit</td>
-                        <td>Vorteil Javascript</td>
+                        <td rowspan="4">Vorteile</td>
+                        <td>Dependency Injection</td>
+                        <td>Einfaches Testen und Bereitstellen</td>
                     </tr>
                     <tr>
-                        <td>Angular</td>
-                        <td>SpringBoot</td>
+                        <td>MVC-Architektur</td>
+                        <td>Reduzierte Entwicklungszeit & Aufwand</td>
+                    </tr>
+                    <tr>
+                      <td>Ermöglicht Unit- und Integrations-Tests</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Fertiges Basiscodegerüst, das kaum Veränderungen bedarf</td>
+                      <td>-</td>
                     </tr>
                     <tr>
                         <td rowspan="2">Nachteile</td>
-                        <td>nachteil typescript</td>
-                        <td>Keine Typsicherheit</td>
-                    </tr>
-                    <tr>
-                        <td>Repository</td>
-                        <td>GitHub</td>
+                        <td>Gebunden an Java / Kotlin</td>
+                        <td>Gebunden an C#</td>
                     </tr>
                 </table>
+
+                <p>
+                  Da wir uns für die Programmiersprache Java entschieden haben, kam nur das
+                  SpringBoot Framework in Frage.
+                </p>
 
                 <table border="1" style="text-align: center">
                     <caption>Vergleich für Remote Repo Plattformen</caption>
@@ -423,27 +440,36 @@
                         <th></th>
                         <th>GitHub</th>
                         <th>GitLab</th>
-                        <th>Codeborg</th>
+                        <th>Codeberg</th>
                     </tr>
                     <tr>
                         <td rowspan="2">Vorteile</td>
-                        <td>Typensicherheit</td>
-                        <td>Vorteil Javascript</td>
+                        <td>Kostenlos</td>
+                        <td>Kostenlose Community Version</td>
+                        <td>Open Source</td>
                     </tr>
                     <tr>
-                        <td>Angular</td>
-                        <td>SpringBoot</td>
+                      <td>GitHub Actions</td>
+                      <td>CI/CD Untersützung</td>
+                      <td>Server in Deutschland</td>
                     </tr>
                     <tr>
                         <td rowspan="2">Nachteile</td>
-                        <td>nachteil typescript</td>
-                        <td>Keine Typsicherheit</td>
+                        <td>Nicht Open Source</td>
+                        <td>Manche Features nur mit Bezahlung</td>
+                        <td>Keine CI/CD Möglichkeit</td>
                     </tr>
                     <tr>
-                        <td>Repository</td>
-                        <td>GitHub</td>
+                        <td>Platzlimitierung</td>
+                        <td>Platzlimitierung</td>
+                        <td>Kleine Community</td>
                     </tr>
                 </table>
+
+                <p>
+                  Wir haben uns für GitHub entschieden, da es aktuell die größte Plattform für Open Source Projekte ist.
+                  Des Weiteren hat es alle Features, welche wir für unser Projekt benötigen. Sei es von CI-CD Pipelines bis hin zu Issue-Tracking.
+                </p>
             </p>
 
             <u>Use-Case Diagramm</u><br>
@@ -512,11 +538,22 @@
         <div class="content">
           <p>
             <u>Manuelles Testkonzept => kurze Schrittanleitung für manuelle Tests</u> <br>
+            <p>
+              Es können die Endpointe des Backends manuell getestet werden. Zum momentanen Zeitpunkt
+              könne über das Programm <a href="https://www.postman.com/" target="_blank">Postman</a>
+              die Endpunkte angesprochen werden.
+              <img src="pictures/example_Postman.png" alt="Beispiel Postman"> <br>
+              Eine Integration für die SwaggerUI ist in Planung und soll
+              noch folgen. <br>
+              Eine weitere Möglichkeit ist das Durchlaufen der Unit und Integrationtests. Wie diese
+              getestet werden können, steht in der README.md der jeweiligen Repos.
+            </p>
 
-            <u>Unit Tests => Pro Person mindestens eine Klasse / Funktionalität testen</u> <br>
-            Es wurden Unit und Integrationstest geschrieben. Diese befinden sich <a href="https://github.com/mohjohfox/GitGood-backend/tree/master/src/test/java/dhbw/karlsruhe/gitgood" target="_blank">hier</a>
-    
-            <u>Integrationstest oder Ende-zu-Ende Test gegen eine Persistenz oder eine API</u> <br>
+            <u>Unit Tests => Pro Person mindestens eine Klasse / Funktionalität testen - Integrationstest oder Ende-zu-Ende Test gegen eine Persistenz oder eine API</u> <br>
+            <p>
+              Es wurden Unit und Integrationstest geschrieben.
+              Diese befinden sich <a href="https://github.com/mohjohfox/GitGood-backend/tree/master/src/test/java/dhbw/karlsruhe/gitgood" target="_blank">hier</a>
+            </p>
           </p>
         </div>
         

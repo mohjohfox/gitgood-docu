@@ -1,0 +1,1288 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gitgood-client documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gitgood-client documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  DartboardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/organisms/dartboard/dartboard-component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dartboard</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./dartboard.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dartboard-component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#beds" >beds</a>
+                            </li>
+                            <li>
+                                <a href="#board" >board</a>
+                            </li>
+                            <li>
+                                <a href="#rings" >rings</a>
+                            </li>
+                            <li>
+                                <a href="#sizes" >sizes</a>
+                            </li>
+                            <li>
+                                <a href="#thrownScore" >thrownScore</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_addRingToBeds" >_addRingToBeds</a>
+                            </li>
+                            <li>
+                                <a href="#_asPercent" >_asPercent</a>
+                            </li>
+                            <li>
+                                <a href="#_createBoardSvg" >_createBoardSvg</a>
+                            </li>
+                            <li>
+                                <a href="#_dispatchThrowEvent" >_dispatchThrowEvent</a>
+                            </li>
+                            <li>
+                                <a href="#_renderBorders" >_renderBorders</a>
+                            </li>
+                            <li>
+                                <a href="#_renderSegments" >_renderSegments</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#render" >render</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:62</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_addRingToBeds"></a>
+                    <span class="name">
+                        <span ><b>_addRingToBeds</b></span>
+                        <a href="#_addRingToBeds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_addRingToBeds(ring, beds)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ring</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>beds</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_asPercent"></a>
+                    <span class="name">
+                        <span ><b>_asPercent</b></span>
+                        <a href="#_asPercent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_asPercent(number)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>number</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_createBoardSvg"></a>
+                    <span class="name">
+                        <span ><b>_createBoardSvg</b></span>
+                        <a href="#_createBoardSvg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_createBoardSvg(board)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>board</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_dispatchThrowEvent"></a>
+                    <span class="name">
+                        <span ><b>_dispatchThrowEvent</b></span>
+                        <a href="#_dispatchThrowEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_dispatchThrowEvent(boardContainer, bed)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>boardContainer</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bed</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_renderBorders"></a>
+                    <span class="name">
+                        <span ><b>_renderBorders</b></span>
+                        <a href="#_renderBorders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_renderBorders(board, ring, beds, outerRadius, innerRadius)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>board</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ring</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>beds</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>outerRadius</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>innerRadius</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_renderSegments"></a>
+                    <span class="name">
+                        <span ><b>_renderSegments</b></span>
+                        <a href="#_renderSegments"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_renderSegments(board, ring, beds, outerRadius, innerRadius)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:179</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>board</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ring</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>beds</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>outerRadius</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>innerRadius</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="render"></a>
+                    <span class="name">
+                        <span ><b>render</b></span>
+                        <a href="#render"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>render()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="beds"></a>
+                    <span class="name">
+                        <span ><b>beds</b></span>
+                        <a href="#beds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="board"></a>
+                    <span class="name">
+                        <span ><b>board</b></span>
+                        <a href="#board"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rings"></a>
+                    <span class="name">
+                        <span ><b>rings</b></span>
+                        <a href="#rings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sizes"></a>
+                    <span class="name">
+                        <span ><b>sizes</b></span>
+                        <a href="#sizes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="thrownScore"></a>
+                    <span class="name">
+                        <span ><b>thrownScore</b></span>
+                        <a href="#thrownScore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/organisms/dartboard/dartboard-component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {AfterViewInit, Component} from &#x27;@angular/core&#x27;;
+import { select } from &#x27;d3-selection&#x27;;
+import { arc, pie } from &#x27;d3-shape&#x27;;
+
+const defaultOptions &#x3D; {
+    size: null,
+    borderPercent: 10,
+    doublePercent: 10,
+    outerSinglePercent: 25,
+    triplePercent: 10,
+    innerSinglePercent: 30,
+    outerBullPercent: 8,
+    innerBullPercent: 7,
+};
+
+const defaultRings &#x3D; {
+    BORDER: { name: &#x27;border&#x27;, abbr: &#x27;M&#x27;, multiplier: 0 },
+    DOUBLE: { name: &#x27;double&#x27;, abbr: &#x27;D&#x27;, multiplier: 2 },
+    OUTER_SINGLE: { name: &#x27;outerSingle&#x27;, abbr: &#x27;S&#x27;, multiplier: 1 },
+    TRIPLE: { name: &#x27;triple&#x27;, abbr: &#x27;T&#x27;, multiplier: 3 },
+    INNER_SINGLE: { name: &#x27;innerSingle&#x27;, abbr: &#x27;S&#x27;, multiplier: 1 },
+    OUTER_BULL: { name: &#x27;outerBull&#x27;, abbr: &#x27;B&#x27;, multiplier: 1 },
+    INNER_BULL: { name: &#x27;innerBull&#x27;, abbr: &#x27;DB&#x27;, multiplier: 1 },
+};
+
+const defaultBeds &#x3D; [
+    { frame: 20, position: 1, color: &#x27;Dark&#x27; },
+    { frame: 1, position: 2, color: &#x27;Light&#x27; },
+    { frame: 18, position: 3, color: &#x27;Dark&#x27; },
+    { frame: 4, position: 4, color: &#x27;Light&#x27; },
+    { frame: 13, position: 5, color: &#x27;Dark&#x27; },
+    { frame: 6, position: 6, color: &#x27;Light&#x27; },
+    { frame: 10, position: 7, color: &#x27;Dark&#x27; },
+    { frame: 15, position: 8, color: &#x27;Light&#x27; },
+    { frame: 2, position: 9, color: &#x27;Dark&#x27; },
+    { frame: 17, position: 10, color: &#x27;Light&#x27; },
+    { frame: 3, position: 11, color: &#x27;Dark&#x27; },
+    { frame: 19, position: 12, color: &#x27;Light&#x27; },
+    { frame: 7, position: 13, color: &#x27;Dark&#x27; },
+    { frame: 16, position: 14, color: &#x27;Light&#x27; },
+    { frame: 8, position: 15, color: &#x27;Dark&#x27; },
+    { frame: 11, position: 16, color: &#x27;Light&#x27; },
+    { frame: 14, position: 17, color: &#x27;Dark&#x27; },
+    { frame: 9, position: 18, color: &#x27;Light&#x27; },
+    { frame: 12, position: 19, color: &#x27;Dark&#x27; },
+    { frame: 5, position: 20, color: &#x27;Light&#x27; },
+];
+
+@Component({
+    selector: &#x27;app-dartboard&#x27;,
+    templateUrl: &#x27;./dartboard-component.html&#x27;,
+    styleUrls: [&#x27;./dartboard.component.css&#x27;]
+})
+export class DartboardComponent implements AfterViewInit {
+
+    thrownScore;
+
+    beds;
+    rings;
+  // tslint:disable-next-line:max-line-length
+    board: { container: Element; element: any; width: any; segmentWidth: number; height: any; radius: any; rotation: any; svg: any; pie: any; };
+    sizes;
+
+    constructor() {
+    }
+
+    async ngAfterViewInit() {
+        const containerSelector &#x3D; &#x27;#dartboard&#x27;;
+        const beds &#x3D; defaultBeds;
+        const rings &#x3D; defaultRings;
+        const options &#x3D; defaultOptions;
+        this.beds &#x3D; beds;
+        this.rings &#x3D; rings;
+
+        const boardContainer &#x3D; document.querySelector(containerSelector);
+        const board &#x3D; {
+            container: boardContainer,
+            element: select(containerSelector).append(&#x27;div&#x27;).classed(&#x27;c-Dartboard&#x27;, true),
+            width: options.size || Math.min(400, 500), // Math.min(boardContainer.offsetHeight, boardContainer.offsetWidth),
+            segmentWidth: 360 / beds.length,
+            height : undefined,
+            radius : undefined,
+            rotation : undefined,
+            svg : undefined,
+            pie,
+        };
+
+        board.height &#x3D; board.width;
+        board.radius &#x3D; board.width / 2;
+        board.rotation &#x3D; board.segmentWidth / -2; // rotate so center of first segment is on top
+        board.svg &#x3D; this._createBoardSvg(board);
+        this.board &#x3D; board;
+
+        const sizes &#x3D; {
+            border: board.radius * this._asPercent(options.borderPercent),
+            double: board.radius * this._asPercent(options.doublePercent),
+            outerSingle: board.radius * this._asPercent(options.outerSinglePercent),
+            triple: board.radius * this._asPercent(options.triplePercent),
+            innerSingle: board.radius * this._asPercent(options.innerSinglePercent),
+            outerBull: board.radius * this._asPercent(options.outerBullPercent),
+            innerBull: board.radius * this._asPercent(options.innerBullPercent),
+        };
+        this.sizes &#x3D; sizes;
+        console.log(&#x27;Init dartboard&#x27;);
+        this.render();
+        console.log(this.board);
+    }
+
+    render() {
+        this.board.pie &#x3D; pie()
+            .sort((a, b) &#x3D;&gt; (a.position - b.position))
+            .value(() &#x3D;&gt; this.board.segmentWidth);
+
+        let innerRadius &#x3D; 0;
+        let outerRadius &#x3D; innerRadius + this.sizes.innerBull;
+        this._renderSegments(this.board, this.rings.INNER_BULL, [{ frame: 50, color: &#x27;Dark&#x27; }],
+            outerRadius, innerRadius);
+
+        innerRadius &#x3D; outerRadius;
+        outerRadius &#x3D; innerRadius + this.sizes.outerBull;
+        this._renderSegments(this.board, this.rings.OUTER_BULL, [{ frame: 25, color: &#x27;Light&#x27; }],
+            outerRadius, innerRadius);
+
+        innerRadius &#x3D; outerRadius;
+        outerRadius &#x3D; innerRadius + this.sizes.innerSingle;
+        this._renderSegments(this.board, this.rings.INNER_SINGLE, this.beds, outerRadius, innerRadius);
+
+        innerRadius &#x3D; outerRadius;
+        outerRadius &#x3D; innerRadius + this.sizes.triple;
+        this._renderSegments(this.board, this.rings.TRIPLE, this.beds, outerRadius, innerRadius);
+
+        innerRadius &#x3D; outerRadius;
+        outerRadius &#x3D; innerRadius + this.sizes.outerSingle;
+        this._renderSegments(this.board, this.rings.OUTER_SINGLE, this.beds, outerRadius, innerRadius);
+
+        innerRadius &#x3D; outerRadius;
+        outerRadius &#x3D; innerRadius + this.sizes.double;
+        this._renderSegments(this.board, this.rings.DOUBLE, this.beds, outerRadius, innerRadius);
+
+        innerRadius &#x3D; this.board.radius - this.sizes.border;
+        outerRadius &#x3D; this.board.radius;
+        this._renderBorders(this.board, this.rings.BORDER, this.beds, outerRadius, innerRadius);
+    }
+
+  // tslint:disable-next-line:variable-name
+    _asPercent(number): number {
+        return (number / 100).toFixed(2) as unknown || number;
+    }
+
+    _createBoardSvg(board) {
+        return board.element.append(&#x27;svg&#x27;)
+            .attr(&#x27;width&#x27;, board.width)
+            .attr(&#x27;height&#x27;, board.height)
+            .append(&#x27;g&#x27;)
+            .attr(&#x27;transform&#x27;, &#x60;translate(${board.radius}, ${board.radius}) rotate(${board.rotation})&#x60;);
+    }
+
+    _addRingToBeds(ring, beds) {
+        const bedsWithRings &#x3D; [];
+        beds.forEach(bed &#x3D;&gt; {
+            const bedWithRing &#x3D; JSON.parse(JSON.stringify(bed));
+            bedWithRing.ring &#x3D; ring;
+            bedsWithRings.push(bedWithRing);
+        });
+
+        return bedsWithRings;
+    }
+
+    _dispatchThrowEvent(boardContainer, bed) {
+        const detail &#x3D; {
+            bed: bed.ring.abbr + bed.frame,
+            ring: bed.ring.name,
+            score: bed.frame * bed.ring.multiplier,
+        };
+        const event &#x3D; new CustomEvent(&#x27;throw&#x27;, {detail});
+        boardContainer.dispatchEvent(event);
+    }
+
+    _renderSegments(board, ring, beds, outerRadius, innerRadius) {
+        const classname &#x3D; &#x60;c-Dartboard-${ring.name}&#x60;;
+
+        const segments &#x3D; board.svg.append(&#x27;g&#x27;)
+            .classed(classname, true)
+            .selectAll(&#x27;arc&#x27;)
+                .data(board.pie(this._addRingToBeds(ring, beds)))
+                .enter()
+                    .append(&#x27;g&#x27;)
+                        .attr(&#x27;class&#x27;, bed &#x3D;&gt; &#x60;c-Dartboard-bed ${classname}--${bed.data.frame} is${bed.data.color}&#x60;)
+                        .on(&#x27;click&#x27;, bed &#x3D;&gt; this._dispatchThrowEvent(board.container, bed.data));
+
+        segments.append(&#x27;path&#x27;).attr(&#x27;d&#x27;, arc().outerRadius(outerRadius).innerRadius(innerRadius));
+    }
+
+    _renderBorders(board, ring, beds, outerRadius, innerRadius) {
+        const borderArc &#x3D; arc().outerRadius(outerRadius).innerRadius(innerRadius);
+        const borderSegments &#x3D; board.svg.append(&#x27;g&#x27;)
+            .classed(&#x27;c-Dartboard-borders&#x27;, true)
+            .selectAll(&#x27;arc&#x27;)
+                .data(board.pie(this._addRingToBeds(ring, beds)))
+                .enter()
+                    .append(&#x27;g&#x27;)
+                        .attr(&#x27;class&#x27;, bed &#x3D;&gt; &#x60;c-Dartboard-border c-Dartboard-border--${bed.data.frame}&#x60;)
+                        .on(&#x27;click&#x27;, bed &#x3D;&gt; this._dispatchThrowEvent(board.container, bed.data));
+        borderSegments.append(&#x27;path&#x27;).attr(&#x27;d&#x27;, borderArc);
+
+        function _determineRotation(bedData) {
+            return -board.rotation + (board.segmentWidth * (bedData.position - 1));
+        }
+        function determineX(bed) {
+            return borderArc.centroid(bed)[0];
+        }
+        function determineY(bed) {
+            return borderArc.centroid(bed)[1];
+        }
+
+        borderSegments.append(&#x27;text&#x27;)
+            .classed(&#x27;c-Dartboard-borderLabel&#x27;, true)
+            .attr(&#x27;x&#x27;, determineX)
+            .attr(&#x27;y&#x27;, determineY)
+            .attr(&#x27;dy&#x27;, &#x27;.35em&#x27;)
+            .attr(&#x27;transform&#x27;, bed &#x3D;&gt; &#x60;rotate(${_determineRotation(bed.data)}, ${determineX(bed)}, ${determineY(bed)})&#x60;)
+            .attr(&#x27;text-anchor&#x27;, &#x27;middle&#x27;)
+            .text(bed &#x3D;&gt; bed.data.frame);
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;dartboard&quot;&gt;&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./dartboard.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.c-Dartboard {
+    stroke: silver;
+    stroke-width: 2px;
+}
+
+.c-Dartboard-borders {
+    fill: black;
+}
+.c-Dartboard-borderLabel {
+    font-family: sans-serif;
+    fill: white;
+    stroke-width: 0;
+}
+
+.c-Dartboard-bed.isDark {
+    fill: black;
+}
+
+.c-Dartboard-bed.isLight {
+    fill: ivory;
+}
+
+.c-Dartboard-double .c-Dartboard-bed.isDark,
+.c-Dartboard-triple .c-Dartboard-bed.isDark,
+.c-Dartboard-innerBull .c-Dartboard-bed.isDark,
+.c-Dartboard-outerBull .c-Dartboard-bed.isDark {
+    fill: red;
+}
+
+.c-Dartboard-double .c-Dartboard-bed.isLight,
+.c-Dartboard-triple .c-Dartboard-bed.isLight,
+.c-Dartboard-innerBull .c-Dartboard-bed.isLight,
+.c-Dartboard-outerBull .c-Dartboard-bed.isLight {
+    fill: green;
+}
+
+.c-Dartboard-bed:hover, .c-Dartboard-border:hover {
+    fill-opacity: 0.6;
+    cursor: pointer;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div id="dartboard"></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ButtonComponent', 'selector': 'app-button'},{'name': 'DartboardComponent', 'selector': 'app-dartboard'},{'name': 'GameActiveComponent', 'selector': 'app-game-running'},{'name': 'GameModeComponent', 'selector': 'app-game-mode'},{'name': 'GameSetupComponent', 'selector': 'app-game-setup'},{'name': 'LeaderboardComponent', 'selector': 'app-leaderboard'},{'name': 'LeaderboardPlayerComponent', 'selector': 'app-leaderboard-player'},{'name': 'PlayerAddComponent', 'selector': 'app-player-add'},{'name': 'PlayerScoreComponent', 'selector': 'app-player-score'},{'name': 'PlayerSelectionComponent', 'selector': 'app-player-selection'},{'name': 'TextFieldComponent', 'selector': 'app-text-field'},{'name': 'WinnerComponent', 'selector': ''}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DartboardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DartboardComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

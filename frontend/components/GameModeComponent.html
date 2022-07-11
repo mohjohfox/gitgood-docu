@@ -8,379 +8,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-	    <link rel="stylesheet" href="../styles/style.css">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
     </head>
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
             <a href="../" class="navbar-brand">gitgood-client documentation</a>
-            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-            <div id="book-search-input" role="search">
-                <input type="text" placeholder="Type to search">
-            </div>
-            <nav>
-            
-                <ul class="list">
-            
-                    <li class="title">
-                        <a href="../">gitgood-client documentation</a>
-                    </li>
-            
-                    <li class="divider"></li>
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
-                        <ul class="links">
-                                <li class="link">
-                                    <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
-                                </li>
-                                <li class="link">
-                                    <a 
-                                        
-                                         href="../overview.html" 
-                                         href="../overview.html" 
-                                        >
-                                        <span class="fa fa-th"></span>Overview
-                                    </a>
-                                </li>
-                        </ul>
-                    </li>
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="./modules.html" >
-                            <span class="fa fa-archive"></span>
-                            <span>Modules</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-modules-links"
-                            ></span>
-                        </a>
-                        <ul class="links collapse in"
-                                id="xs-modules-links"
-                            >
-                                <li class="link">
-                                    <a href="../modules/AppModule.html" >AppModule</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-                    <li class="chapter">
-                        <div class="simple">
-                            <span class="fa fa-cogs"></span>
-                            <span>Components</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-components-links"
-                                ></span>
-                        </div>
-                        <ul class="links collapse in"
-                                id="xs-components-links"
-                            >
-                                <li class="link">
-                                    <a href="../components/AppComponent.html" >AppComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../components/ButtonComponent.html" >ButtonComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../components/GameModeComponent.html"  class="active" >GameModeComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../components/GameSetupComponent.html" >GameSetupComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../components/PlayerAddComponent.html" >PlayerAddComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../components/PlayerSelectionComponent.html" >PlayerSelectionComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../components/TextFieldComponent.html" >TextFieldComponent</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-            
-                    <li class="chapter">
-                        <div class="simple">
-                            <span class="fa fa-file-code-o"></span>
-                            <span>Classes</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-classes-links"
-                                ></span>
-                        </div>
-                        <ul class="links collapse in"
-                                id="xs-classes-links"
-                            >
-                                <li class="link">
-                                    <a href="../classes/AppPage.html" >AppPage</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/GameMode.html" >GameMode</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/Player.html" >Player</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-            
-                    <li class="chapter">
-                        <div class="simple">
-                            <span class="fa fa-long-arrow-down"></span>
-                            <span>Injectables</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-injectables-links"
-                                ></span>
-                        </div>
-                        <ul class="links collapse in"
-                                id="xs-injectables-links"
-                            >
-                                <li class="link">
-                                    <a href="../injectables/GameModeService.html" >GameModeService</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../injectables/PlayerService.html" >PlayerService</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../injectables/TodoService.html" >TodoService</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-                    <li class="chapter">
-                        <div class="simple">
-                            <span class="fa fa-info"></span>
-                            <span>Interfaces</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-interfaces-links"
-                                ></span>
-                        </div>
-                        <ul class="links collapse in"
-                                id="xs-interfaces-links"
-                            >
-                                <li class="link">
-                                    <a href="../interfaces/Todo.html" >Todo</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
-                    </li>
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
-                    </li>
-            
-                    <li class="divider"></li>
-                    <li class="copyright">
-                            Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
-                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
-                            </a>
-                    </li>
-            
-                </ul>
-            
-            </nav>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
            <div class="row main">
                <div class="hidden-xs menu">
-                   <nav>
-                   
-                       <ul class="list">
-                   
-                           <li class="title">
-                               <a href="../">gitgood-client documentation</a>
-                           </li>
-                   
-                           <li class="divider"></li>
-                   
-                               <div id="book-search-input" role="search">
-                                   <input type="text" placeholder="Type to search">
-                               </div>
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
-                               <ul class="links">
-                                       <li class="link">
-                                           <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
-                                       </li>
-                                       <li class="link">
-                                           <a 
-                                               
-                                                href="../overview.html" 
-                                                href="../overview.html" 
-                                               >
-                                               <span class="fa fa-th"></span>Overview
-                                           </a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="./modules.html" >
-                                   <span class="fa fa-archive"></span>
-                                   <span>Modules</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#modules-links"
-                                   ></span>
-                               </a>
-                               <ul class="links collapse in"
-                                       id="modules-links"
-                   >
-                                       <li class="link">
-                                           <a href="../modules/AppModule.html" >AppModule</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                           <li class="chapter">
-                               <div class="simple">
-                                   <span class="fa fa-cogs"></span>
-                                   <span>Components</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#components-links"
-                   ></span>
-                               </div>
-                               <ul class="links collapse in"
-                                       id="components-links"
-                   >
-                                       <li class="link">
-                                           <a href="../components/AppComponent.html" >AppComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../components/ButtonComponent.html" >ButtonComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../components/GameModeComponent.html"  class="active" >GameModeComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../components/GameSetupComponent.html" >GameSetupComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../components/PlayerAddComponent.html" >PlayerAddComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../components/PlayerSelectionComponent.html" >PlayerSelectionComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../components/TextFieldComponent.html" >TextFieldComponent</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                   
-                           <li class="chapter">
-                               <div class="simple">
-                                   <span class="fa fa-file-code-o"></span>
-                                   <span>Classes</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#classes-links"
-                   ></span>
-                               </div>
-                               <ul class="links collapse in"
-                                       id="classes-links"
-                   >
-                                       <li class="link">
-                                           <a href="../classes/AppPage.html" >AppPage</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/GameMode.html" >GameMode</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/Player.html" >Player</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                   
-                           <li class="chapter">
-                               <div class="simple">
-                                   <span class="fa fa-long-arrow-down"></span>
-                                   <span>Injectables</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#injectables-links"
-                   ></span>
-                               </div>
-                               <ul class="links collapse in"
-                                       id="injectables-links"
-                   >
-                                       <li class="link">
-                                           <a href="../injectables/GameModeService.html" >GameModeService</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../injectables/PlayerService.html" >PlayerService</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../injectables/TodoService.html" >TodoService</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                           <li class="chapter">
-                               <div class="simple">
-                                   <span class="fa fa-info"></span>
-                                   <span>Interfaces</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#interfaces-links"
-                   ></span>
-                               </div>
-                               <ul class="links collapse in"
-                                       id="interfaces-links"
-                   >
-                                       <li class="link">
-                                           <a href="../interfaces/Todo.html" >Todo</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
-                           </li>
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
-                           </li>
-                   
-                           <li class="divider"></li>
-                           <li class="copyright">
-                                   Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
-                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
-                                   </a>
-                           </li>
-                   
-                       </ul>
-                   
-                   </nav>
+                   <compodoc-menu mode="normal"></compodoc-menu>
                </div>
+               <!-- START CONTENT -->
                <div class="content component">
                    <div class="content-data">
 
 
+
+
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>GameModeComponent</li>
+  <li
+  >
+  GameModeComponent</li>
 </ol>
 
-
-    <ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs" role="tablist">
         <li class="active">
-            <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
         </li>
-        <li>
-            <a href="#source" role="tab" id="source-tab" data-toggle="tab">Source</a>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
         </li>
-    </ul>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
 
-    <div class="tab-content">
-        <div class="tab-pane fade active in" id="infos"><p class="comment">
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
     <h3>File</h3>
 </p>
 <p class="comment">
@@ -389,11 +66,19 @@
 
 
 
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
 <section>
     <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
+    <table class="table table-sm table-hover metadata">
         <tbody>
-
 
 
 
@@ -415,97 +100,367 @@
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>game-mode.component.html</code></td>
+                <td class="col-md-9"><code>./game-mode.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
     </table>
 </section>
 
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#gamemode" >gamemode</a>
+                            </li>
+                            <li>
+                                <a href="#ruleTextField" >ruleTextField</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getGameMode" >getGameMode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#showRules" >showRules</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(gameModeService: <a href="../injectables/GameModeService.html" target="_self">GameModeService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/organisms/game-mode/game-mode.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>gameModeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GameModeService.html" target="_self" >GameModeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
 
 
     <section>
-        <h3 id="constructor">Constructor</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>constructor(gameModeService: <a href="../injectables/GameModeService.html" >GameModeService</a>, router: <a href="https://angular.io/docs/ts/latest/api/router/index/Router-class.html" target="_blank" >Router</a>)</code>
-                        </td>
-                    </tr>
     
-                </tbody>
-            </table>
-    </section>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGameMode"></a>
+                    <span class="name">
+                        <span ><b>getGameMode</b></span>
+                        <a href="#getGameMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGameMode()</code>
+                </td>
+            </tr>
 
-    <section>
-        <h3 id="methods">Methods</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b> showRules</b>
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    <code>showRules(gameModeName: string)</code>
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-description">
-                                    <b>Returns: </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/components/organisms/game-mode/game-mode.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/GameMode.html" target="_self" >GameMode</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/components/organisms/game-mode/game-mode.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showRules"></a>
+                    <span class="name">
+                        <span ><b>showRules</b></span>
+                        <a href="#showRules"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showRules(gameModeName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/organisms/game-mode/game-mode.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>gameModeName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
     <section>
-        <h3 id="inputs">Properties</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="gamemode"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>gamemode</b></span>
+                        <a href="#gamemode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/GameMode.html" target="_self" >GameMode</a></code>
+
+                    </td>
+                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <b> ruleTextField</b>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/organisms/game-mode/game-mode.component.ts:14</a></div>
                         </td>
                     </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ruleTextField"></a>
+                    <span class="name">
+                        <span ><b>ruleTextField</b></span>
+                        <a href="#ruleTextField"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../components/TextFieldComponent.html" target="_self" >TextFieldComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(TextFieldComponent)<br />
+                        </code>
+                    </td>
+                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <code>ruleTextField:     <code>boolean</code>
-    </bcode>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/organisms/game-mode/game-mode.component.ts:12</a></div>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b> TextFieldComponent</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>TextFieldComponent:     <code>any</code>
-    </bcode>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
+
+
+        </tbody>
+    </table>
+</section>
+
 </div>
-        <div class="tab-pane fade tab-source-code" id="source">
-            <pre><code class="hljs javascript">import {Component, OnInit, ViewChild} from &#x27;@angular/core&#x27;;
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit, ViewChild} from &#x27;@angular/core&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
 import {GameModeService} from &#x27;../../../services/gamemode.service&#x27;;
 import {TextFieldComponent} from &#x27;../../atoms/text-field/text-field.component&#x27;;
+import {GameMode} from &#x27;../../../model/gamemode&#x27;;
 
 @Component({
     selector: &#x27;app-game-mode&#x27;,
@@ -513,6 +468,8 @@ import {TextFieldComponent} from &#x27;../../atoms/text-field/text-field.compone
 })
 export class GameModeComponent implements OnInit {
   @ViewChild(TextFieldComponent) ruleTextField!: TextFieldComponent;
+
+  private gamemode: GameMode;
 
     constructor(private readonly gameModeService: GameModeService,
                 private readonly router: Router) {
@@ -525,13 +482,88 @@ export class GameModeComponent implements OnInit {
     showRules(gameModeName: string) {
         this.gameModeService.getGameModeByName(gameModeName).subscribe( response &#x3D;&gt; {
         this.ruleTextField.text &#x3D; response.description;
+        this.gamemode &#x3D; response;
       });
+    }
+
+    getGameMode(): GameMode {
+     return this.gamemode;
     }
 
 }
 </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h2 class&#x3D;&quot;Modi&quot;&gt;Spielmodus:&lt;/h2&gt;
+
+  &lt;div class&#x3D;&quot;btn-group&quot; data-toggle&#x3D;&quot;buttons&quot;&gt;
+    &lt;label class&#x3D;&quot;btn btn-primary&quot;&gt;
+      &lt;input type&#x3D;&quot;radio&quot; (click)&#x3D;&quot;showRules(&#x27;THREEHUNDREDONE&#x27;)&quot; name&#x3D;&quot;options&quot; id&#x3D;&quot;option1&quot;&gt; 301
+    &lt;/label&gt;
+    &lt;label class&#x3D;&quot;btn btn-primary&quot;&gt;
+      &lt;input type&#x3D;&quot;radio&quot; (click)&#x3D;&quot;showRules(&#x27;FIVEHUNDREDONE&#x27;)&quot; name&#x3D;&quot;options&quot; id&#x3D;&quot;option2&quot;&gt; 501
+    &lt;/label&gt;
+    &lt;label class&#x3D;&quot;btn btn-primary&quot;&gt;
+      &lt;input type&#x3D;&quot;radio&quot; (click)&#x3D;&quot;showRules(&#x27;CRICKET&#x27;)&quot; name&#x3D;&quot;options&quot; id&#x3D;&quot;option3&quot; disabled&gt; Cricket
+    &lt;/label&gt;
+    &lt;label class&#x3D;&quot;btn btn-primary&quot;&gt;
+      &lt;input type&#x3D;&quot;radio&quot; (click)&#x3D;&quot;showRules(&#x27;SHANGHAI&#x27;)&quot; name&#x3D;&quot;options&quot; id&#x3D;&quot;option4&quot; disabled&gt; Shanghai
+    &lt;/label&gt;
+    &lt;label class&#x3D;&quot;btn btn-primary&quot;&gt;
+      &lt;input type&#x3D;&quot;radio&quot; (click)&#x3D;&quot;showRules(&#x27;ROUNDTHECLOCK&#x27;)&quot; name&#x3D;&quot;options&quot; id&#x3D;&quot;option5&quot; disabled&gt; Round the clock
+    &lt;/label&gt;
+    &lt;label class&#x3D;&quot;btn btn-primary&quot;&gt;
+      &lt;input type&#x3D;&quot;radio&quot; (click)&#x3D;&quot;showRules(&#x27;ONEHUNDREDTWENTYDOWNANDUPWARDS&#x27;)&quot; name&#x3D;&quot;options&quot; id&#x3D;&quot;option6&quot; disabled&gt; 120 - runter und rauf
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;app-text-field text&#x3D;&quot;Regeln des ausgewählten Spielmodi.&quot;&gt;&lt;/app-text-field&gt;
+
+
+
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
         </div>
     </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h2 class="Modi">Spielmodus:</h2>  <div class="btn-group" data-toggle="buttons">    <label class="btn btn-primary">      <input type="radio" (click)="showRules(\'THREEHUNDREDONE\')" name="options" id="option1"> 301    </label>    <label class="btn btn-primary">      <input type="radio" (click)="showRules(\'FIVEHUNDREDONE\')" name="options" id="option2"> 501    </label>    <label class="btn btn-primary">      <input type="radio" (click)="showRules(\'CRICKET\')" name="options" id="option3" disabled> Cricket    </label>    <label class="btn btn-primary">      <input type="radio" (click)="showRules(\'SHANGHAI\')" name="options" id="option4" disabled> Shanghai    </label>    <label class="btn btn-primary">      <input type="radio" (click)="showRules(\'ROUNDTHECLOCK\')" name="options" id="option5" disabled> Round the clock    </label>    <label class="btn btn-primary">      <input type="radio" (click)="showRules(\'ONEHUNDREDTWENTYDOWNANDUPWARDS\')" name="options" id="option6" disabled> 120 - runter und rauf    </label>  </div>  <app-text-field text="Regeln des ausgewählten Spielmodi."></app-text-field></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ButtonComponent', 'selector': 'app-button'},{'name': 'DartboardComponent', 'selector': 'app-dartboard'},{'name': 'GameActiveComponent', 'selector': 'app-game-running'},{'name': 'GameModeComponent', 'selector': 'app-game-mode'},{'name': 'GameSetupComponent', 'selector': 'app-game-setup'},{'name': 'LeaderboardComponent', 'selector': 'app-leaderboard'},{'name': 'LeaderboardPlayerComponent', 'selector': 'app-leaderboard-player'},{'name': 'PlayerAddComponent', 'selector': 'app-player-add'},{'name': 'PlayerScoreComponent', 'selector': 'app-player-score'},{'name': 'PlayerSelectionComponent', 'selector': 'app-player-selection'},{'name': 'TextFieldComponent', 'selector': 'app-text-field'},{'name': 'WinnerComponent', 'selector': ''}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'GameModeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
 
 
 
@@ -552,8 +584,31 @@ export class GameModeComponent implements OnInit {
     </div>
 </div>
 </div>
+               <!-- END CONTENT -->
            </div>
        </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GameModeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 
@@ -564,20 +619,17 @@ export class GameModeComponent implements OnInit {
 
        <script src="../js/compodoc.js"></script>
 
-       <script src="../js/search/search.js"></script>
-       <script src="../js/search/lunr.min.js"></script>
-       <script src="../js/search/search-lunr.js"></script>
-
+       <script src="../js/tabs.js"></script>
        <script src="../js/menu.js"></script>
-       <script src="../js/libs/highlight.pack.js"></script>
-       <script src="../js/libs/highlightjs-line-numbers.min.js"></script>
-       <script src="../js/search/search_index.js"></script>
-       <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                hljs.initHighlightingOnLoad();
-                hljs.initLineNumbersOnLoad();
-            });
-       </script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
 
     </body>
 </html>

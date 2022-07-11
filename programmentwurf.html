@@ -18,12 +18,12 @@
           <p>
             <ul>
               <li>Kein manuelles Rechnen mehr notwendig</li>
-              <li>Miteingebundene Spielregeln: jeder kann nachlesen wie gespielt wird</li>
+              <li>Miteingebundene Spielregeln: Jeder kann die Regeln direkt nachlesen</li>
               <li>Anzeige der Checkoutmöglichkeiten</li>
-              <li>Überblick über alle Stände</li>
+              <li>Überblick über alle Spielstände</li>
               <li>Automatische Punktekalkulation</li>
-              <li>Möglichkeit gemeinsam mit Freunden Spielen</li>
-              <li>Vergleich mit Anderen</li>
+              <li>Möglichkeit gemeinsam mit Freunden zu spielen</li>
+              <li>Einfache und realistische Eingabe der Punkte</li>
             </ul>
           </p>
         </div>
@@ -35,10 +35,11 @@
           <p>
             <ul>
               <li>Webanwendung</li>
-              <li>Freie Auswahl an Spielmodi</li>
-              <li>Einsicht Spielregeln</li>
+              <li>Auswahl an Spielmodi (am Anfang nur eingeschränkte Auswahl möglich)</li>
+              <li>Einsicht der jeweiligen Spielregeln</li>
               <li>Punkteüberprüfung / Punktekalkulation</li>
-              <li>Checkoutmöglichkeit</li>
+              <li>Anzeige der Checkoutmöglichkeiten</li>
+              <li>Verbindung mit Datenbank (ermöglicht spätere Auswertungen)</li>
             </ul>
           </p>
         </div>
@@ -51,7 +52,7 @@
             <ul>
               <li>Hobbydartspieler</li>
               <li>Alleine, zu zweit oder mehr Spieler</li>
-              <li>Personen mit Dartscheibe und Dartpfeilen</li>
+              <li>Personen mit (normaler) Dartscheibe und Dartpfeilen</li>
             </ul>
           </p>
         </div>
@@ -64,7 +65,10 @@
             <u>Anforderungserfassung in natürlicher Sprache => Verwendung von User Stories</u> 
             <p>
               Anforderungen wurden als sogennante User-Stories festgehalten. Diese beinhalten jeweils eine Beschreibung, was damit erreicht werden soll, eine Punktzahl (Story-Points)
-              und Unteraufgaben, die von den Entwicklern abgearbeitet werden. 
+              und Unteraufgaben, die von den Entwicklern abgearbeitet werden.
+              Des Weiteren hat eine Story sogenannte Akzeptanzkriterien und eine Definition of Done (DoD), welche vor Beginn der Story definiert werden.
+              Anhand dieser kann nach Umsetzung der Story geprüft werden, ob alle Anforderungen erfüllt sind und ob die Story vollständig abgeschlossen
+              werden kann.
             </p>
 
             <u>Ziele und Zielgrupen festhalten => z.B. Product Vision Board / Personas formulieren</u> 
@@ -155,16 +159,18 @@
     
             <u>Grobes zeitliches Schätzen der Anforderungen => in Personentagen oder in UserStoryPoints / FunctionPoints</u>
             <p>
-              Wir haben die Anforderung und zeitlichen Umfang mittels StoryPoints definiert. Hierzu wird jede Story von den Entwicklern geschätz. Als
-              Grundlage dienen die Fibonaccizahlen. Sollten die StoryPoints den Rahmen eines Sprints sprengen, wird die Story in kleiner Teilstories zerlegt.
-              Über ein sogenanntets Refinement haben wir die anstehenden Stories zusammen geschätzt und die Punkte in Jira eingetragen. Dadurch konnte geprüft werden, ob 
+              Wir haben die Anforderung und zeitlichen Umfang mittels Story Points definiert. Hierzu wird jede Story von den Entwicklern geschätz. Als
+              Grundlage dienen die Fibonaccizahlen. Sollten die Story Points den Rahmen eines Sprints sprengen, wird die Story in kleiner Teilstories zerlegt.
+              Über ein sogenanntes Refinement haben wir die anstehenden Stories zusammen geschätzt und die Punkte in Jira eingetragen. Dadurch konnte geprüft werden, ob
               jeder Entwickler die gleiche Vorstellung von der Aufgabe hat und die einzelnen Bedenken bezüglich der Story besprochen und geklärt werden. 
             </p>
     
             <u>Bonus:</u> <br>
     
-            <u>Eventstorming Board Phase 1 und 2 (Ermitteln der Domänenevents)</u> <br>
-            <u>Glosar für Fachbegriffe</u> <br>
+            <u>Eventstorming Board Phase 1 und 2 (Ermitteln der Domänenevents)</u>
+            <p>-</p>
+            <u>Glosar für Fachbegriffe</u>
+            <p>Das Glosr für Fachbegriffe befindet sich <a href="glosar.html">hier</a></p>
           </p>
         </div>
 
@@ -209,10 +215,11 @@
         <div class="content">
           <p>
             Über die Projektphase wurde mit dem Tool Jira in sogenannten Sprints gearbeitet.
-            Sprints betrugen immer eine Woche. Am Ende eines Sprints werden die Aufgaben für den nächsten Sprint besprochen. <br>
+            Sprints betrugen immer eine Woche. Am Ende eines Sprints wurden die Aufgaben für den nächsten Sprint besprochen. <br>
               Für eine Story oder Bug wird eine
-            neue Branch aufgemacht. Wenn die Story abgeschlossen ist, wird ein Merge-Request gestellt. Wenn dieser approved wurde, wird die Branch in master gemerged und die Änderungen
-            auf den Server deployed. Storys und Bugs wurden bisher in Jira hinterlegt.
+            neue Branch aufgemacht. Wenn die Story abgeschlossen ist, wird ein Merge-Request gestellt. Sobald dieser approved ist, kann die Branch
+            in master gemerged und die Änderungen
+            auf den Server deployed werden. Storys und Bugs wurden bisher in Jira hinterlegt.
             Allerdings haben wir dies mittlerweile von Jira auf GitHub Issues umgestellt.
               Dies ermöglicht ein effizienteres und Open Source mäßigeres arbeiten.
               Dort kann absofort jeder ein neues Feature, einen Bug
@@ -473,16 +480,17 @@
             </p>
 
             <u>Use-Case Diagramm</u><br>
-            <img src="" alt="Use-Case-Diagramm"> <br>
+            <img src="pictures/use_case_diagramm.png" alt="Use-Case-Diagramm"> <br>
     
             <u>Aktivitätsdiagramm:</u><br>
-            <img src="pictures/activity_diagramm_playGame.png" alt="Aktivitätsdiagramm"> <br>
-    
+            <img src="pictures/activity_diagramm_setupNewGame.png" alt="Aktivitätsdiagramm Setup Game"> <br>
+            <img src="pictures/activity_diagramm_playGame.png" alt="Aktivitätsdiagramm Play Game"> <br>
+
             <u>Klassendiagramm:</u><br>
             <img src="pictures/class_diagramm.png" alt="Klassendiagramm"> <br>
     
             <u>Schnittstellen Web/Persistenz/Ui visualisieren => Komponentendiagramm:</u><br>
-            <img src="" alt="Komponentendiagramm"> <br>
+            <img src="pictures/component_diagramm.png" alt="Komponentendiagramm"> <br>
     
             <u>Sequenzdiagramm:</u><br>
             <img src="pictures/sequence_diagramm_1.png" alt="Sequenzdiagramm 1"> <br>
@@ -508,7 +516,7 @@
         <div class="content">
           <p>
             Code-Reviews wurden über GitHub durchgeführt. Jeder Entwickler stellt nach Abschluss eines Features einen Merge-Request von der Feature-Branch auf die master-Branch.
-            Der Merge-Request muss immer von einem anderen Entwickler approved werden. Zudem, muss die Pipeline erfolgreich durchlaufen sein. Erst dann, kann der Merge durchgeführt 
+            Der Merge-Request muss immer von einem anderen Entwickler approved werden. Zudem muss die Pipeline erfolgreich durchlaufen sein. Erst dann kann der Merge durchgeführt
             werden. In den Merge-Request wird besonders auf Sinnhaftigkeit und folgende Punkte geachtet:
             
             <ul>
@@ -530,8 +538,10 @@
 
             <u>Code-Review => Code-Kommentare und einheitliche Formatierung:</u> <br>
             <p>
-              Einheitliche Formatierung wurde über einen Formatter in der Entwicklungsumgebgung erzielt.
-              Es soll nur das Nötigste Kommentiert werden: Die besten Kommentare, sind die, die man nicht braucht :) 
+              Einheitliche Formatierung wurde über einen
+           <a href="https://raw.githubusercontent.com/google/styleguide/gh-pages/intellij-java-google-style.xml" target="_blank">Formatter</a>
+              in der Entwicklungsumgebgung erzielt. <br>
+              Kommentare sollte nur die Aussnahme sein: “Don’t comment bad code — rewrite it.”
             </p>
           </p>
         </div>
@@ -616,15 +626,15 @@
 
             <u>Wann/Wie oft werden welche Tests ausgeführt?</u> 
             <p>
-              Bei jeder Änderung wird entweder die Feature-Pipeline oder die Master-Pipeline angestossen. Beide führen zuerst den Build-Step durch. 
-              Wenn dieser erfolgreich abgeschlossen ist, werden alle vorhanden Test im Test-Step durchlaufen. Wenn der Build fehlgeschlägt, stoppt die Pipeline. 
+              Bei jeder Änderung wird entweder die Feature-Pipeline oder die Master-Pipeline angestoßen. Beide führen zuerst den Build-Step durch.
+              Wenn dieser erfolgreich abgeschlossen ist, werden alle vorhandenen Tests im Test-Step durchlaufen. Wenn der Build fehlgeschlägt, stoppt die Pipeline.
             </p>
 
             <u>Wer wird wann informiert Entwickler/Kunde/DevOps</u> 
             <p>
-              Kunden werden momentan nicht informiert, da diese im Normalfall von den Änderungen nichts mitbekommen. Zukünftig sollen die Nutzer allerdings bei einem neuen Relaise 
+              Kunden werden momentan nicht informiert, da diese im Normalfall von den Änderungen nichts mitbekommen. Zukünftig sollen die Nutzer allerdings bei einem neuen Release
               der Seite über neue Features informiert werden.
-              Entwickler bekommen eine Benachrichtung, falls ihre angestossene Pipeline fehlschlägt, da sich diese manuell darum kümmern müssen. 
+              Entwickler bekommen eine Benachrichtigung, falls ihre angestoßene Pipeline fehlschlägt, da dies einen manuellen Eingriff erfordert.
             </p>
 
             <u>Script für Semantic Versioning erstellen</u> <br>
